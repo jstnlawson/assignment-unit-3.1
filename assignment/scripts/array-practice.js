@@ -86,16 +86,26 @@ console.log('The list is back to:', favoriteFoods);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+favoriteFoods[1] = 'fried rice';
+console.log("I changed my second choice on my favorite foods list, now it's:", favoriteFoods);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+favoriteFoods.sort().reverse();
+//I found these methods seperately and just decided to try putting them together, seemed to work.
+console.log(favoriteFoods);
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+
+let favoriteFoodsAnd = favoriteFoods.join(' and ');
+console.log(favoriteFoodsAnd);
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+let animalsAndEdibles = animalArray.concat(favoriteFoods);
+console.log(animalsAndEdibles);
